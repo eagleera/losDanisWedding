@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+@layer base {
+    @font-face {
+        font-family: 'Bodoni';
+        src: url(fonts/BodoniFLF-Roman.ttf) format('ttf');
+        font-weight: normal;
+        font-style: normal;
+    }
+    @font-face {
+        font-family: 'Bodoni';
+        src: url(fonts/BodoniFLF-Italic.ttf) format('ttf');
+        font-weight: normal;
+        font-style: italic;
+    }
+    @font-face {
+        font-family: 'Bodoni';
+        src: url(fonts/BodoniFLF-Bold.ttf) format('ttf');
+        font-weight: bold;
+        font-style: normal;
+    }
+    @font-face {
+        font-family: 'Bodoni';
+        src: url(fonts/BodoniFLF-BoldItalic.ttf) format('ttf');
+        font-weight: bold;
+        font-style: italic;
+    }
+    @font-face {
+        font-family: 'LekyCalgria';
+        src: url(fonts/LekyCalgria.ttf) format('ttf');
+        font-weight: normal;
+        font-style: normal;
+    }
+}
