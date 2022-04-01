@@ -8,5 +8,8 @@
         "rsvp": "RSVP",
         "photos": "Photos"
     },
+    "landing": {
+        "ourWedding": "Our Wedding"
+    },
     "sample": "test"
 }

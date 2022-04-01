@@ -9,9 +9,9 @@ import {
   LoaderFunction,
   useLoaderData
 } from "remix";
-import { useRemixI18Next } from "remix-i18next";
 import type { LinksFunction, MetaFunction } from "remix";
 import { i18n } from "../i18n.server";
+import { useSetupTranslations } from "remix-i18next";
 import styles from "./styles/app.css";
 
 export let loader: LoaderFunction = async ({ request }) => {
@@ -48,8 +48,7 @@ export const meta: MetaFunction = () => {
 
 export default function App() {
   let { locale } = useLoaderData<{ locale: string }>();
-  console.log(locale);
-  useRemixI18Next(locale);
+  useSetupTranslations(locale);
   return (
     <html lang="es">
       <head>

@@ -2,8 +2,7 @@ import { hydrate } from "react-dom";
 import { RemixBrowser } from "remix";
 import i18next from "i18next";
 import detector from "i18next-browser-languagedetector";
-import { initReactI18next } from "react-i18next";
-import { RemixI18NextProvider } from "remix-i18next";
+import { I18nextProvider, initReactI18next } from "react-i18next";
 
 i18next
   .use(detector)
@@ -17,9 +16,9 @@ i18next
   })
   .then(() => {
     return hydrate(
-      <RemixI18NextProvider i18n={i18next}>
+      <I18nextProvider i18n={i18next}>
         <RemixBrowser />
-      </RemixI18NextProvider>,
+      </I18nextProvider>,
       document
     );
   });

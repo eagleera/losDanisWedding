@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styles from "./envelope.css";
 
 export const links = () => [{ rel: "stylesheet", href: styles }];
@@ -6,7 +6,7 @@ export const links = () => [{ rel: "stylesheet", href: styles }];
 const colors = {
   purple: "#A181A6",
   bone: "#F7EDE2",
-  yellow: "#F6D294",
+  wedYellow: "#F6D294",
   orange: "#EBA57D",
   brown: "#BF8960",
 };
@@ -15,9 +15,8 @@ interface Props {
 }
 ;
 export const Envelope = (props: Props) => {
+  useEffect(() => openEnvelope(), [])
   function openEnvelope() {
-    console.log(props);
-    const svg = document.getElementById("envelope");
     const seal = document.getElementById("seal");
     const triangle = document.getElementById("triangle");
     seal?.classList.add("open-seal");
@@ -55,7 +54,7 @@ export const Envelope = (props: Props) => {
             stroke={colors.brown}
             strokeWidth="0.2%"
             d="M0.3 0 L 10 7 L 19.7 0 L 12 0"
-            fill={colors.yellow}
+            fill={colors.wedYellow}
           />
           <defs>
             <pattern

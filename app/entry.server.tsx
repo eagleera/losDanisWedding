@@ -2,8 +2,7 @@ import { renderToString } from "react-dom/server";
 import { RemixServer } from "remix";
 import type { EntryContext } from "remix";
 import i18next from "i18next";
-import { initReactI18next } from "react-i18next";
-import { RemixI18NextProvider } from "remix-i18next";
+import { I18nextProvider, initReactI18next } from "react-i18next";
 
 export default async function handleRequest(
   request: Request,
@@ -18,9 +17,9 @@ export default async function handleRequest(
     react: { useSuspense: false },
   });
   const markup = renderToString(
-    <RemixI18NextProvider i18n={i18next}>
+    <I18nextProvider i18n={i18next}>
       <RemixServer context={remixContext} url={request.url} />
-    </RemixI18NextProvider>
+    </I18nextProvider>
   );
   responseHeaders.set("Content-Type", "text/html");
 
