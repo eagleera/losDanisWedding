@@ -1,0 +1,12 @@
+{
+    "header": {
+        "people": "People",
+        "party": "Party",
+        "registry": "Registry",
+        "place": "Place",
+        "accomodations": "Accomodations",
+        "rsvp": "RSVP",
+        "photos": "Photos"
+    },
+    "sample": "test"
+}

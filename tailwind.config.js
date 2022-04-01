@@ -12,7 +12,7 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        'sans': ['Bodoni Moda', 'Bodoni', 'Roboto', 'Helvetica', 'Arial', 'sans-serif'],
+        'sans': ['Bodoni Moda', 'Roboto', 'Helvetica', 'Arial', 'sans-serif'],
         'leki': 'Leky Calgria'
       }
     },

@@ -5,10 +5,20 @@ import {
   Outlet,
   Scripts,
   ScrollRestoration,
+  json,
+  LoaderFunction,
+  useLoaderData
 } from "remix";
-import type { LinksFunction } from "remix";
-import type { MetaFunction } from "remix";
+import { useRemixI18Next } from "remix-i18next";
+import type { LinksFunction, MetaFunction } from "remix";
+import { i18n } from "../i18n.server";
 import styles from "./styles/app.css";
+
+export let loader: LoaderFunction = async ({ request }) => {
+  let locale = await i18n.getLocale(request);
+  console.log(request, locale);
+  return json({ locale });
+};
 
 export const links: LinksFunction = () => {
   return [
@@ -37,8 +47,11 @@ export const meta: MetaFunction = () => {
 };
 
 export default function App() {
+  let { locale } = useLoaderData<{ locale: string }>();
+  console.log(locale);
+  useRemixI18Next(locale);
   return (
-    <html lang="en">
+    <html lang="es">
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width,initial-scale=1" />
