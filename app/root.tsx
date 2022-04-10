@@ -16,7 +16,6 @@ import styles from "./styles/app.css";
 
 export let loader: LoaderFunction = async ({ request }) => {
   let locale = await i18n.getLocale(request);
-  console.log(request, locale);
   return json({ locale });
 };
 

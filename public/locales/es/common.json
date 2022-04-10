@@ -3,7 +3,14 @@
         "people": "Personas"
     },
     "landing": {
-        "ourWedding": "Our Wedding"
+        "ourWedding": "Our Wedding",
+        "addCalendar": "Agendar en mi calendario"
     },
-    "sample": "test2"
+    "sample": "test2",
+    "date": "SÁBADO, 1 DE OCTUBRE 2022",
+    "days": "Dias",
+    "hours": "Horas",
+    "mins": "Mins",
+    "secs": "Segundos",
+    "weddingName": "Boda de los Danis"
 }

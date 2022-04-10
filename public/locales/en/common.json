@@ -9,7 +9,14 @@
         "photos": "Photos"
     },
     "landing": {
-        "ourWedding": "Our Wedding"
+        "ourWedding": "Our Wedding",
+        "addCalendar": "Add to calendar"
     },
-    "sample": "test"
+    "sample": "test",
+    "date": "SATURDAY, OCTOBER 1 2022",
+    "days": "Days",
+    "hours": "Hours",
+    "mins": "Mins",
+    "secs": "Seconds",
+    "weddingName": "Dani's Wedding"
 }

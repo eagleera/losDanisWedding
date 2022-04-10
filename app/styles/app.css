@@ -531,6 +531,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   top: 0px;
 }
 
+.my-6 {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.my-8 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
 .mb-4 {
   margin-bottom: 1rem;
 }
@@ -547,6 +557,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   min-height: 100vh;
 }
 
+.w-full {
+  width: 100%;
+}
+
 .items-center {
   align-items: center;
 }
@@ -559,11 +573,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   justify-content: space-around;
 }
 
-.bg-wedYellow {
-  --tw-bg-opacity: 1;
-  background-color: rgb(246 210 148 / var(--tw-bg-opacity));
-}
-
 .bg-orange {
   --tw-bg-opacity: 1;
   background-color: rgb(235 165 125 / var(--tw-bg-opacity));
@@ -574,8 +583,26 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(247 237 226 / var(--tw-bg-opacity));
 }
 
+.bg-yellow-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(202 138 4 / var(--tw-bg-opacity));
+}
+
 .p-6 {
   padding: 1.5rem;
+}
+
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+.pt-6 {
+  padding-top: 1.5rem;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .text-5xl {
@@ -593,6 +620,15 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 1.75rem;
 }
 
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
 .text-yellow-700 {
   --tw-text-opacity: 1;
   color: rgb(161 98 7 / var(--tw-text-opacity));
@@ -601,6 +637,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-yellow-900 {
   --tw-text-opacity: 1;
   color: rgb(113 63 18 / var(--tw-text-opacity));
+}
+
+.text-yellow-800 {
+  --tw-text-opacity: 1;
+  color: rgb(133 77 14 / var(--tw-text-opacity));
 }
 
 .opacity-0 {
@@ -620,6 +661,18 @@ Ensure the default browser behavior of the `hidden` attribute.
 @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 @media (min-width: 768px) {
+  .md\:m-auto {
+    margin: auto;
+  }
+
+  .md\:w-auto {
+    width: auto;
+  }
+
+  .md\:text-center {
+    text-align: center;
+  }
+
   .md\:text-7xl {
     font-size: 4.5rem;
     line-height: 1;

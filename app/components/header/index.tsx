@@ -16,7 +16,6 @@ export const Header = ({ t }: Props) => {
       header?.classList.add("absolute");
       header?.classList.remove("sticky");  
     }
-    console.log(window.pageYOffset);
   }
 
   useEffect(() => {

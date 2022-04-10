@@ -9,7 +9,6 @@ export const links = () => [
 export default function Index() {
   const navigate = useNavigate();
   const goHome = () => {
-    console.log(navigate);
     navigate("home", { replace: true });
   }
   return (
