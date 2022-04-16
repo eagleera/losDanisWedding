@@ -37,6 +37,10 @@ export const links: LinksFunction = () => {
     {
       rel: "stylesheet",
       href: "http://fonts.cdnfonts.com/css/leky-calgria"
+    },
+    {
+      rel: "stylesheet",
+      href: "https://fonts.googleapis.com/css2?family=Parisienne&display=swap"
     }
   ];
 }
