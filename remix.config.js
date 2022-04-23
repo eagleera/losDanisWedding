@@ -3,10 +3,8 @@
  */
 module.exports = {
   appDirectory: "app",
-  assetsBuildDirectory: "public/build",
+  browserBuildDirectory: "public/build",
   publicPath: "/build/",
-  devServerPort: 8002,
-  ignoredRouteFiles: [".*"],
-  serverBuildPath: "build/index.js",
+  serverBuildDirectory: "build",
   serverBuildTarget: "vercel"
 };
